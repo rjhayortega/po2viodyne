@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0053)http://www.viodyne.com/HomePage/View_Article?Mod_ID=5 -->
+<html lang="en"><head runat="server"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+
+    <title>Viodyne</title>
+
+    <link rel="stylesheet" href="{%static 'css/reset.css'%}"> <!-- CSS reset -->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}"> 
+    <!-- jQuery -->
+
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--
+ 
+    <script src="{%static 'js/jquery-3.1.1.min.js'%}"></script>
+
+    <script src="{%static 'js/jquery-3.1.1.js'%}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+
+
+
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+-->
+
+
+
+
+    <!-- Custom CSS -->
+    <link href="{%static 'css/Home.css'%}" rel="stylesheet">
+
+
+
+    <script src="{%static 'js/home.js'%}"></script>
+
+
+   <!-- Resource style -->
+    <script src="{%static 'js/main.js'%}"></script> <!-- Resource jQuery -->
+
+    <link href="{%static 'css/css'%}" rel="stylesheet">
+    <link href="{%static 'css/css(1)'%}" rel="stylesheet">    
+
+
+    <link href="{%static 'css/css(2)'%}" rel="stylesheet">
+   
+    <link rel="icon" href="http://www.viodyne.com/Contents/page_images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".divWaiting").hide();
+            $("#timeout").hide();
+            var bot = $('#footer').height() ;
+            $('body').css("margin-bottom", $('#footer').height() + "px");
+            //var navbar = $('.navbar');
+            //$(window).scroll(function () {
+            //    if ($(window).scrollTop() <= 40) {
+            //        navbar.css('box-shadow', 'none');
+            //        navbar.removeAttr("style");
+            //        $('#Website_Banner').removeAttr("style");
+
+                  
+            //    } else {
+            //        navbar.css('box-shadow', '0px 3px 5px rgba(0, 0, 0, 0.4)');
+            //        navbar.css("position", "fixed");
+            //        navbar.css("top", 60)
+            //        navbar.css("left", "0")
+            //        navbar.css("right", "0")
+            //        navbar.css("z-index", 4)
+            //        navbar.css("margin-top", -8)
+                  
+                  
+            //        $('#Website_Banner').css("position", "fixed");
+            //        $('#Website_Banner').css("top", -2)
+            //        $('#Website_Banner').css("left", "0")
+            //        $('#Website_Banner').css("right", "0")
+            //        $('#Website_Banner').css("z-index", 3)
+            //        $('#Website_Banner').css("padding", "0px 0px")
+                 
+            //        $('body').css("margin-bottom", bot + "px");
+
+            //    }
+            //});
+        });
+
+      
+
+    </script>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+
+</head>
+<body style="margin-bottom: 204.875px;">
+    <!-- Navigation -->
+    <div id="banner0" class="container-fluid bg_Gradient">
+        <div class="container">
+            <div class="col-sm-6 col-md-6 col-xs-4 banner_tagline">
+                <h5 style="font-weight:500;color:white">Extending the quality of life and saving lives</h5>
+            </div>
+
+           {% include "inc.html"%}
+            </div>
+        </div>
+    </div>
+    <div id="Website_Banner" class="container-fluid">
+        <div class="container">
+            <div class="col-md-4 col-sm-4  col-xs-4" style="padding-left: 0px;">
+                
+                <div class="logo_text">
+                    <a href="http://www.viodyne.com/"><img src="{%static 'images/viodyne_logo.png'%}"></a>
+                </div>
+            </div>   
+            
+            <div class="col-md-4 col-sm-4  col-xs-8">
+
+                <div class="input-group divsearch">
+                    <input type="text" class="form-control" style="border-color:#12295d" placeholder="Search" name="q" id="searchTxt">
+                    <div class="input-group-btn">
+                        <a class="btn btn-default bg_Gradient" id="searchBtn" href="http://www.viodyne.com/ProductList/Products?key=" style="border-color:#12295d;color:#fff"><i class="glyphicon glyphicon-search"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div class="col-md-3 col-sm-4 col-xs-12 cart_div">
+                <a href="http://www.viodyne.com/Cart/Quote_View" id="navToggleCart" style="color:#173374;font-size:1.2em"><span class="badge" id="navTotal" style="padding:5px 7px;background-color:#c70909;"></span><span class="glyphicon glyphicon-shopping-cart"></span> Quote Request Cart</a>
+            </div>
+            </div>
+    </div>
+
+
+    
+{% include "nav.html"%}
+
+
+
+    <div class="render_body">
+        
+
+
+<div class="container">
+    <div class="Home_content">
+            <div>
+                
+        
+        
+            <!-- <p>Viodyne is a global provider of medical</p> <p><img src="../../ExternalPlugin/fileman/Uploads/Viodyne Images/Company Overview.jpg" alt="" /></p> -->
+        
+        
+            <div class="row">
+                <h3 class="AboutUsheader h2_blue">About Us</h3>
+				<div class="col-sm-12">
+				<div class="row">
+                <div class="col-md-3">
+                    <div class="aboutusImg_con">
+                        <img id="aboutusImg" src="{%static 'images/AboutUs.JPG'%}" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-9 AboutUsTab">
+	
+                    <ul class="nav nav-tabs tab_about_menu nav-justified">
+                        <li class="width25perc {{co}}"><a data-toggle="tab" href="http://www.viodyne.com/HomePage/View_Article?Mod_ID=5#Company">Company Overview</a></li>
+                       
+                        <li class="width30perc {{qms}}"><a data-toggle="tab" href="http://www.viodyne.com/HomePage/View_Article?Mod_ID=5#QMS">Quality Management System</a></li>
+                        
+                        <li class="width20perc {{om}}"><a data-toggle="tab" href="http://www.viodyne.com/HomePage/View_Article?Mod_ID=5#Mission">Our Mission</a></li>
+
+                        <li class="width20perc {{ov}}"><a data-toggle="tab" href="http://www.viodyne.com/HomePage/View_Article?Mod_ID=5#Vision">Our Vision</a></li>
+
+            <li class="width20perc {{t}}"><a data-toggle="tab" href="/article/1/#Testimonials">Testimonials</a></li>
+
+
+                    </ul>
+
+                    <div class="tab-content   tab_about_content">
+                        <div id="Company" class="tab-pane  {{co}} ">
+							<div style="margin-left:5%; margin-right:5%;">
+                            <div class="row">
+                                <div class="col-sm-7 col-xs-12">
+                                    <p align="justify">Viodyne is a global provider of medical solutions.  Established in the United States with offices and facilities in various countries, our product portfolio empower our clients to tackle complex medical challenges.
+					<br><br></p><p><strong><span style="color: #0b6bb5;">Our Core Values</span></strong></p>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Committing to Constant Self Improvement and Innovation</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Contagious Giving</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Reach – Making the Impossible Possible</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">High Service Standard</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Rigorous Quality System</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Empowering and Inspiring</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Extending the Quality of Life and Save Lives</span></li>
+                                    <p></p>
+				</div>
+                                <div class="col-sm-3 col-sm-offset-2 col-xs-12 ">
+                                    <p align="justify"> <img src="{%static 'images/Company Overview.jpg'%}"></p>
+                                </div> 
+                            </div>
+							</div>
+                        </div>
+                        <div id="QMS" class="tab-pane {{qms}} ">
+							<div style="margin-left:5%; margin-right:5%;">
+                            <div class="row">
+                                <div class="col-sm-8 col-xs-12">
+                                    <p align="justify">Our Quality Management System's direction is to consistently meet our clients highest requirements and expectations.
+					<br><br></p><p><strong><span style="color: #0b6bb5;">Quality Management System Principals</span></strong></p>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Customer Focus</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Leadership</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Engagement of People</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Process Approach</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Improvement</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Evidence-Based Decision Making</span></li>
+					<li style="color: #0b6bb5;"><span style="color: #333333;">Relationship Management</span></li>
+                                    <p></p>
+                                </div>
+                                <div class="col-sm-3 col-sm-offset-1 col-xs-12">
+                                    <p><img src="{%static 'images/qms.png'%}"></p>
+                                </div>
+                            </div>
+							</div>
+                        </div>
+
+
+
+
+                        <div id="Mission" class="tab-pane {{om}} ">
+							<div style="margin-left:5%; margin-right:5%;">
+                           
+                            <div class="row">
+                                 <div class="col-sm-7 col-xs-12">
+                                    <p align="justify">
+                                        <span style="font-family: &#39;Times New Roman&#39;, serif;"><span style="font-size: medium;"><span style="font-family: Calibri, serif;">Our mission is to provide cutting-edge products and the highest service standard. To meet this challenge, we have made a commitment to remain on the forefront of emerging innovations. We recruit from the top percentile of professionals and are continuously involved in their career development to ensure the implementation of the highest service standard to clients.</span></span></span></p>
+                                    <p align="justify"><span style="font-family: &#39;Times New Roman&#39;, serif;"><span style="font-size: medium;"><span style="font-family: Calibri, serif;">Our innovation and service standard are two of the core values that lead our mission.</span></span></span></p>
+                                </div>
+				<div class="col-sm-3 col-sm-offset-2 col-xs-12">
+				    <p><img src="{%static 'images/Our Mission.jpg'%}"></p>
+				</div>
+                            </div>
+							</div>
+                        </div>
+
+
+
+                        <div id="Vision" class="tab-pane {{ov}} ">
+							<div style="margin-left:5%; margin-right:5%;">
+                            <div class="row">
+                                <div class="col-sm-8 col-xs-12">
+                                    <p><br><br><br><br>To extend the quality of life and save lives.</p>
+                                </div>
+                                <div class="col-sm-3 col-sm-offset-1 col-xs-12">
+                                    <p><img src="{%static 'images/Our Vision.JPG'%}"></p>
+                                </div>
+                            </div>
+							</div>
+                        </div>
+
+
+                <!--/////////////////TESTIMONIALS TAB///////////////////?!-->
+
+                  
+
+                        <div id="Testimonials" class="tab-pane {{t}} ">
+                            
+                            <div style="margin-left:5%; margin-top:0px; margin-right:-20%;">
+                              
+                              <table  border="1" width="100%">
+                                <tr>
+                                    <td width="40">
+
+
+   <div style="position:absolute; top:30px; margin-right: 60px; width:300px;height:200px;">
+                              
+
+                        <div >
+                                  
+                                    <p align="justify"><span style="font-family: &#39;Times New Roman&#39;, serif;"><span style="font-size: medium;"><span style="font-family: Calibri, serif;">
+             <p>                       
+We receive many comments from satisfied customers
+and want to share some with you.
+
+Feel free to send us your own comments.
+
+
+"We have enjoyed our interactions with Viodyne.  They have a great team that provides us with excellent service."</p>
+
+<p>
+Dr. Smith</p>
+
+
+
+                                    </span></span></span> </p>
+
+                                <p> 
+                                <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                           <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                           <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                     
+
+                                  </p>  
+
+
+                                </div>
+
+
+
+
+                        <div >
+                                  
+                                    <p align="justify"><span style="font-family: &#39;Times New Roman&#39;, serif;"><span style="font-size: medium;"><span style="font-family: Calibri, serif;">
+             <p>                       
+"I wanted to thank you for the valuable education programs you are providing me and my staff. I found them excellent."
+
+
+</p>
+
+<p>
+Ms. Emily
+</p>
+
+
+
+                                    </span></span></span> </p>
+
+                                <p> 
+                                <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                           <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                           <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                     
+
+                                  </p>  
+
+
+                                </div>
+
+
+
+
+
+
+
+                        <div >
+                                  
+                                    <p align="justify"><span style="font-family: &#39;Times New Roman&#39;, serif;"><span style="font-size: medium;"><span style="font-family: Calibri, serif;">
+             <p>                       
+"Viodyne has been providing us with sterilization supplies for the past few years.
+Their products are durable and their staff dependable.  We are so happy with them."
+
+</p>
+
+<p>
+Mr. Stanley</p>
+
+
+
+                                    </span></span></span> </p>
+
+                                <p> 
+                                <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                           <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                           <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                     
+
+                                  </p>  
+
+
+                                </div>
+
+
+
+   <div >
+                                  
+                                    <p align="justify"><span style="font-family: &#39;Times New Roman&#39;, serif;"><span style="font-size: medium;"><span style="font-family: Calibri, serif;">
+             <p>                       
+"Viodyne always meets our very high expectations."
+
+</p>
+
+<p>
+Mrs. Silvano</p>
+
+
+
+                                    </span></span></span> </p>
+
+                                <p> 
+                                <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                           <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                           <span class="glyphicon glyphicon-star" style="color:gold;"></span>
+                     
+
+                                  </p>  
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+</div>
+
+
+
+
+   
+                                <!--
+                                <div class="col-sm-3 col-sm-offset-1 col-xs-12">
+                                    <p><img src="{%static 'images/Our Vision.JPG'%}"></p>
+                                </div>-->
+
+</td>
+
+<td width="50%">
+
+
+
+<form action="http://www.viodyne.com/HomePage/Contact_form" method="post"><input name="__RequestVerificationToken" type="hidden" value="e-wot9889GmPytWzR8vyHOCkc6FezbcHqvCU73BhaDeWaAOivQjBjqZQyA8hOLPcjcKFwH32x67rLiQgeo4zeDcW0k21hpSQIH1VeJ71NzQ1">                    
+
+    <div class="col-md-6" style="margin-top:30px; margin-right: 10px;">
+
+                        <img src="{%static 'images/Our%20Vision.JPG'%}" width="" height=""></img>
+                                <label class="required">
+      <span style="font-size: medium;"><span style="font-family: Calibri, serif;color:red;">Send A Comment</span></label>
+
+
+
+                            <label class="required">NAME:</label>
+
+
+                            <input class="form-control" data-val="true" data-val-required="*" id="contactName" name="contactName" style="width: 200px;" required="True" type="text" value="">
+                   
+                                  </br>    
+
+
+
+                            <label class="required">EMAIL:</label>
+                           
+                            <input class="form-control" data-val="true" data-val-required="*" id="Email" name="Email" required="True" style="width: 200px;" type="email" value="">
+                            </br>      
+
+
+                 
+                            <label class="required">MESSAGE:</label>
+                            <textarea class="form-control" cols="20" data-val="true" data-val-required="*" id="Message" name="Message" required="True" style="width: 200px;" rows="2"></textarea>
+                 
+                 
+                            <div class="g-recaptcha" data-sitekey="6LfwgxMUAAAAALFjCu4s8wLAbeL_3MV2vBbOqhUk" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"><div style="width: 304px; height: 78px;"><div><iframe src="{%static 'html/anchor.html'%}" width="304" height="78" role="presentation" name="a-qtkapidz7ctl" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                  
+
+
+                        <div class="col-md-offset-1 col-md-4" style="margin-bottom:10px;padding:1px">
+                            <input type="submit" class="btn btn btn-success btn-block bg_Gradient" name="Send" value="SEND">
+                        </div>
+</form>    
+
+
+
+
+
+
+</td>
+</tr></table>
+
+
+                            </div>
+                        </div>
+
+<!--////////////////////////////////////////////////////////!-->
+
+
+
+
+                    </div>
+                </div>
+				</div>
+				</div>
+			</div>
+        
+        
+            </div>
+
+    </div>
+</div>
+    </div>
+    <!-- /#page-wrapper -->
+
+    
+
+    {% include "footer.html"%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

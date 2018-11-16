@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- saved from url=(0043)http://www.viodyne.com/HomePage/JoinOurTeam -->
+<html lang="en"><head runat="server"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+
+    <title>Viodyne</title>
+
+    <link rel="stylesheet" href="{%static 'css/reset.css'%}"> <!-- CSS reset -->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}"> 
+    <!-- jQuery -->
+ 
+    <script type="text/javascript" async="" src="{%static 'js/recaptcha__en.js'%}"></script>
+    <script src="{%static 'js/jquery-3.1.1.min.js'%}"></script>
+
+    <script src="{%static 'js/jquery-3.1.1.js'%}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+
+
+
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="{%static 'css/Home.css'%}" rel="stylesheet">
+
+
+
+    <script src="{%static 'js/home.js'%}"></script>
+
+
+
+   <!-- Resource style -->
+    <script src="{%static 'js/main.js'%}"></script> <!-- Resource jQuery -->
+
+    <link href="{%static 'css/css'%}" rel="stylesheet">
+    <link href="{%static 'css/css(1)'%}" rel="stylesheet">    
+
+
+    <link href="{%static 'css/css(2)'%}" rel="stylesheet">
+   
+    <link rel="icon" href="http://www.viodyne.com/Contents/page_images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".divWaiting").hide();
+            $("#timeout").hide();
+            var bot = $('#footer').height() ;
+            $('body').css("margin-bottom", $('#footer').height() + "px");
+            //var navbar = $('.navbar');
+            //$(window).scroll(function () {
+            //    if ($(window).scrollTop() <= 40) {
+            //        navbar.css('box-shadow', 'none');
+            //        navbar.removeAttr("style");
+            //        $('#Website_Banner').removeAttr("style");
+
+                  
+            //    } else {
+            //        navbar.css('box-shadow', '0px 3px 5px rgba(0, 0, 0, 0.4)');
+            //        navbar.css("position", "fixed");
+            //        navbar.css("top", 60)
+            //        navbar.css("left", "0")
+            //        navbar.css("right", "0")
+            //        navbar.css("z-index", 4)
+            //        navbar.css("margin-top", -8)
+                  
+                  
+            //        $('#Website_Banner').css("position", "fixed");
+            //        $('#Website_Banner').css("top", -2)
+            //        $('#Website_Banner').css("left", "0")
+            //        $('#Website_Banner').css("right", "0")
+            //        $('#Website_Banner').css("z-index", 3)
+            //        $('#Website_Banner').css("padding", "0px 0px")
+                 
+            //        $('body').css("margin-bottom", bot + "px");
+
+            //    }
+            //});
+        });
+
+      
+
+    </script>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+
+</head>
+<body style="margin-bottom: 204.875px;">
+    <!-- Navigation -->
+    <div id="banner0" class="container-fluid bg_Gradient">
+        <div class="container">
+            <div class="col-sm-6 col-md-6 col-xs-4 banner_tagline">
+                <h5 style="font-weight:500;color:white">Extending the quality of life and saving lives</h5>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-xs-8">
+                <div style="float:right;padding-top:8px;">
+                    <a href="https://www.facebook.com/viodyne" target="_blank"><img src="{%static 'images/facebook.png'%}" style="margin-left:10px;"></a>
+                    <a href="https://plus.google.com/+Viodyne" target="_blank"><img src="{%static 'images/g-plus.png'%}" style="margin-left:10px;"></a>
+                    <a href="https://www.linkedin.com/company/viodyne" target="_blank"><img src="{%static 'images/linked-in.png'%}" style="margin-left:10px;"></a>
+                    <a href="https://www.pinterest.com/viodyne/" target="_blank"><img src="{%static 'images/pinterest.png'%}" style="margin-left:10px;"></a>
+                    <a href="https://www.twitter.com/Viodyne" target="_blank"><img src="{%static 'images/twitter.png'%}" style="margin-left:10px;"></a>
+
+                    <a href="https://www.youtube.com/c/Viodyne" target="_blank"><img src="{%static 'images/youtube.png'%}" style="margin-left:10px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Website_Banner" class="container-fluid">
+        <div class="container">
+            <div class="col-md-4 col-sm-4  col-xs-4" style="padding-left: 0px;">
+                
+                <div class="logo_text">
+                    <a href="http://www.viodyne.com/"><img src="{%static 'images/viodyne_logo.png'%}"></a>
+                </div>
+            </div>   
+            
+            <div class="col-md-4 col-sm-4  col-xs-8">
+
+                <div class="input-group divsearch">
+                    <input type="text" class="form-control" style="border-color:#12295d" placeholder="Search" name="q" id="searchTxt">
+                    <div class="input-group-btn">
+                        <a class="btn btn-default bg_Gradient" id="searchBtn" href="http://www.viodyne.com/ProductList/Products?key=" style="border-color:#12295d;color:#fff"><i class="glyphicon glyphicon-search"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div class="col-md-3 col-sm-4 col-xs-12 cart_div">
+                <a href="http://www.viodyne.com/Cart/Quote_View" id="navToggleCart" style="color:#173374;font-size:1.2em"><span class="badge" id="navTotal" style="padding:5px 7px;background-color:#c70909;"></span><span class="glyphicon glyphicon-shopping-cart"></span> Quote Request Cart</a>
+            </div>
+            </div>
+    </div>
+
+{%include "nav.html"%}
+
+    <div class="render_body">
+
+        
+<script src="{%static 'js/api.js'%}" async="" defer=""></script>
+<link href="{%static 'css/css(3)'%}" rel="stylesheet">
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+        if (getParameterByName('join') != null) {
+            $('#form_Container').addClass("in")
+           
+            $('html, body').animate({
+                scrollTop: $("#form_Container").offset().top
+            }, 1000);
+        }
+
+        function getParameterByName(name, url) {
+            if (!url) {
+                url = window.location.href;
+            }
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+    });
+</script>
+
+<div class="container">
+    <div class="Home_content">
+       
+        <div class="row">
+         
+            <br>
+            <div class="col-md-3">
+                <h3 style="margin-bottom:10px" class="page_headers">Join Our Team</h3>
+                <img src="{%static 'images/Join Our Team.jpg'%}" class="img-responsive img-rounded">
+            </div>
+            <div class="col-md-9 JoinOT_p">
+                <br>
+                <br>
+                <br>
+                <p>Our people are our greatest asset.  They are the driving force behind our success.  We are always looking for passionate people who thrive on meeting the challenges of future generations.</p>
+                <p>Our work is making a difference in the lives of many around the world.  Join our team.  Change lives and make a difference.</p>
+                <br>
+                <br>
+               
+                <div class="row">
+                    <p>Viodyne. <span style="font-style: italic;">Working towards a healthier and better world.</span> &nbsp; &nbsp; &nbsp;<a class="btn btn-lg JoinOT_b bg_Gradient" id="joinUSbtn" data-target="#form_Container" data-toggle="collapse">JOIN US! <span style="font-size:15px">▼</span></a> </p> 
+                
+                        
+
+                    <div class="col-md-6 col-md-offset-3  col-lg-6 col-sm-12 collapse" style="text-align:left !important;" id="form_Container">
+                        <br>
+                        <p>We are looking to attract people who share our passion and vision.  If you are driven to make a difference, join us.  Send us your information, together we can make the impossible possible.</p>
+                        <div class="row">
+                            <br>
+
+<form action="http://www.viodyne.com/HomePage/JoinOurTeam" method="post"><input name="__RequestVerificationToken" type="hidden" value="vA_i0XvyXpz4bA_ZjjTwa9UGj-LCeDK_Mriq_0bUBaMbNHrY4ozoOqVx95Droi7x8BK_NCCq6QrV91PKjPRNPEoqj3DYrK7A77_awo57o2o1">                                <div class="col-md-6" style="margin-bottom:10px;">
+                                    <label class="required">FIRST NAME:</label>
+                                    <input class="form-control" data-val="true" data-val-required="*" id="First_name" name="First_name" required="True" type="text" value="">
+                                </div>
+                                <div class="col-md-6" style="margin-bottom:10px;">
+                                    <label class="required">LAST NAME:</label>
+                                    <input class="form-control" data-val="true" data-val-required="*" id="Last_name" name="Last_name" required="True" type="text" value="">
+                                </div>
+                                <div class="col-md-6" style="margin-bottom:10px;">
+                                    <label>TELEPHONE:</label>
+                                    <input class="form-control" id="Tel_No" name="Tel_No" type="text" value="">
+                                </div>
+                                <div class="col-md-6" style="margin-bottom:10px;">
+                                    <label class="required">EMAIL:</label>
+                                    <input class="form-control" data-val="true" data-val-required="*" id="Email" name="Email" required="True" type="email" value="">
+                                </div>
+                                <div class="col-md-12" style="margin-bottom:10px;">
+                                    <label class="required">Tell us what your looking for and why you would be the ideal candidate.</label>
+                                    <textarea class="form-control" cols="20" data-val="true" data-val-required="*" id="Message" name="Message" required="True" rows="2"></textarea>
+                                </div>
+                                <div class="col-md-7" style="margin-bottom:10px;">
+                                    <div class="g-recaptcha" data-sitekey="6LfwgxMUAAAAALFjCu4s8wLAbeL_3MV2vBbOqhUk" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"><div style="width: 304px; height: 78px;"><div><iframe src="{%static'html/anchor.html
+                                    	'%}" width="304" height="78" role="presentation" name="a-lu1j602byn1y" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                                </div>
+                                <div class="col-md-offset-1 col-md-4" style="margin-bottom:10px;padding:10px">
+                                    <input type="submit" class="btn btn btn-success btn-block bg_Gradient" name="Send" value="SEND">
+                                </div>
+</form>
+                            <script>
+                                if (location.hash) {
+                                    $(location.hash).collapse('show');
+                                }
+                                var activeTab = localStorage.getItem('activeTabJoin');
+                                if (activeTab) {
+                                    $(activeTab).collapse('show');
+                                }
+
+                                $('body').on('click', 'a[data-toggle=\'collapse\']', function (e) {
+                                    e.preventDefault()
+                                    var tab_name = $(this).data("target");
+                                    if (history.pushState) {
+                                        history.pushState(null, null, tab_name)
+                                    }
+                                    else {
+                                        location.hash = tab_name
+                                    }
+                                    localStorage.setItem('activeTabJoin', tab_name)
+
+                                    $(tab_name).collapse('toggle');
+                                    return false;
+                                });
+                                $(window).on('popstate', function () {
+                                    var anchor = location.hash ||
+                                      $('a[data-toggle=\'collapse\']').first().data("target");
+                                    $(anchor).collapse('show');
+                                });
+                            </script>
+
+
+
+
+
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    </div>
+            </div>
+            <br>
+          
+
+
+        </div>
+        
+        <br>
+
+    </div>
+</div>
+
+
+    </div>
+    <!-- /#page-wrapper -->
+
+    
+{%include "footer.html"%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="{%static 'html/bframe.html'%}" name="c-lu1j602byn1y" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>

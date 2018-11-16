@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+{%load static %}
+<!-- saved from url=(0050)http://www.viodyne.com/Homepage/Home?category=0000 -->
+<html lang="en"><head runat="server"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+
+    <title>Viodyne</title>
+
+    <link rel="stylesheet" href="{%static 'css/reset.css'%}"> <!-- CSS reset -->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}"> 
+    <!-- jQuery -->
+ 
+    <script src="{%static 'js/jquery-3.1.1.min.js'%}"></script>
+
+    <script src="{%static 'js/jquery-3.1.1.js'%}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+
+
+
+    <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link href="{%static 'css/Home.css'%}" rel="stylesheet">
+
+
+
+    <script src="{%static 'js/home.js'%}"></script>
+
+
+
+   <!-- Resource style -->
+    <script src="{%static 'js/main.js'%}"></script> <!-- Resource jQuery -->
+
+    <link href="{%static 'css/css'%}" rel="stylesheet">
+    <link href="{%static 'css/css(1)'%}" rel="stylesheet">    
+
+
+    <link href="{%static 'css/css(2)'%}" rel="stylesheet">
+   
+    <link rel="icon" href="http://www.viodyne.com/Contents/page_images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $(".divWaiting").hide();
+            $("#timeout").hide();
+            var bot = $('#footer').height() ;
+            $('body').css("margin-bottom", $('#footer').height() + "px");
+            //var navbar = $('.navbar');
+            //$(window).scroll(function () {
+            //    if ($(window).scrollTop() <= 40) {
+            //        navbar.css('box-shadow', 'none');
+            //        navbar.removeAttr("style");
+            //        $('#Website_Banner').removeAttr("style");
+
+                  
+            //    } else {
+            //        navbar.css('box-shadow', '0px 3px 5px rgba(0, 0, 0, 0.4)');
+            //        navbar.css("position", "fixed");
+            //        navbar.css("top", 60)
+            //        navbar.css("left", "0")
+            //        navbar.css("right", "0")
+            //        navbar.css("z-index", 4)
+            //        navbar.css("margin-top", -8)
+                  
+                  
+            //        $('#Website_Banner').css("position", "fixed");
+            //        $('#Website_Banner').css("top", -2)
+            //        $('#Website_Banner').css("left", "0")
+            //        $('#Website_Banner').css("right", "0")
+            //        $('#Website_Banner').css("z-index", 3)
+            //        $('#Website_Banner').css("padding", "0px 0px")
+                 
+            //        $('body').css("margin-bottom", bot + "px");
+
+            //    }
+            //});
+        });
+
+      
+
+    </script>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+
+</head>
+<body style="margin-bottom: 201.113px;">
+    <!-- Navigation -->
+    <div id="banner0" class="container-fluid bg_Gradient">
+        <div class="container">
+            <div class="col-sm-6 col-md-6 col-xs-4 banner_tagline">
+                <h5 style="font-weight:500;color:white">Extending the quality of life and saving lives</h5>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-xs-8">
+                <div style="float:right;padding-top:8px;">
+                    <a href="https://www.facebook.com/viodyne" target="_blank"><img src="{%static 'images/facebook.png'%}" style="margin-left:10px;"></a>
+                    <a href="https://plus.google.com/+Viodyne" target="_blank"><img src="./products_files/g-plus.png" style="margin-left:10px;"></a>
+                    <a href="https://www.linkedin.com/company/viodyne" target="_blank"><img src="./products_files/linked-in.png" style="margin-left:10px;"></a>
+                    <a href="https://www.pinterest.com/viodyne/" target="_blank"><img src="./products_files/pinterest.png" style="margin-left:10px;"></a>
+                    <a href="https://www.twitter.com/Viodyne" target="_blank"><img src="./products_files/twitter.png" style="margin-left:10px;"></a>
+                    <a href="https://www.youtube.com/c/Viodyne" target="_blank"><img src="./products_files/youtube.png" style="margin-left:10px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Website_Banner" class="container-fluid">
+        <div class="container">
+            <div class="col-md-4 col-sm-4  col-xs-4" style="padding-left: 0px;">
+                
+                <div class="logo_text">
+                    <a href="http://www.viodyne.com/"><img src="{%static 'images/viodyne_logo.png'%}"></a>
+                </div>
+            </div>   
+            
+            <div class="col-md-4 col-sm-4  col-xs-8">
+
+                <div class="input-group divsearch">
+                    <input type="text" class="form-control" style="border-color:#12295d" placeholder="Search" name="q" id="searchTxt">
+                    <div class="input-group-btn">
+                        <a class="btn btn-default bg_Gradient" id="searchBtn" href="http://www.viodyne.com/ProductList/Products?key=" style="border-color:#12295d;color:#fff"><i class="glyphicon glyphicon-search"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div class="col-md-3 col-sm-4 col-xs-12 cart_div">
+                <a href="http://www.viodyne.com/Cart/Quote_View" id="navToggleCart" style="color:#173374;font-size:1.2em"><span class="badge" id="navTotal" style="padding:5px 7px;background-color:#c70909;">3</span><span class="glyphicon glyphicon-shopping-cart"></span> Quote Request Cart</a>
+            </div>
+            </div>
+    </div>
+
+
+    {%include "nav.html"%}
+
+    <div class="render_body">
+        
+
+
+
+<script>
+    localStorage.removeItem('activeTab');
+    localStorage.removeItem('activeTabJoin');
+</script>
+
+
+<div class="container content">
+
+    <div class="banner_container">
+        <div class="image_container">
+            <img src="{%static 'images/frontpage.png'%}">
+         
+            
+        </div>
+    </div>
+
+    <div class="Home_content" style="background-color: white;">
+        <div class="co_tagline">Working for a Healthier You. </div>
+        <div class="row tags">
+
+           
+            <div class=" col-md-10 col-md-offset-1  col-lg-10 col-lg-offset-1  col-sm-10  col-offest-sm-1 col-xs-12 ">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12" style="position:relative">
+                        <div class="tag_blocks">
+                            <div class="inside">
+                                <figure class="snip0016">
+
+                                    <img src="{%static 'images/innovative_products.jpg'%}" alt="Innovative Products" class="innovative_products">
+
+                                    <figcaption>
+
+                                        <h2><span>Innovative</span> Products</h2>
+                                        <p>Driven to remain on the forefront of emerging technologies</p>
+                                        
+
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12" style="position:relative">
+                        <div class="tag_blocks">
+                            <div class="inside">
+                                <figure class="snip0016">
+                                    <img src="{%static 'images/distinctive_service.jpg'%}" alt="Distinctive Service" class="distinctive_service">
+                                    <figcaption>
+
+                                        <h2><span>Distinctive  </span>   Service</h2>
+                                        <p>Implementation of the highest service standard</p>
+                                        
+
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12" style="position:relative">
+                        <div class="tag_blocks">
+                            <div class="inside">
+                                <figure class="snip0016">
+                                    <img src="{%static 'images/quality_life.jpg'%}" alt="Innovative Products" class="quality_life">
+                                    <figcaption>
+
+                                        <h2><span>Extending </span>the Quality of Life</h2>
+                                        <p>and Saving Lives!</p>
+                                        
+
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+            <br>
+            <hr>
+            <div class="row" id="Product_Categories_Container">
+                
+                <div class="col-md-3 col-sm-6 col-xs-6 padded">
+                    <div class="categories_container">
+                        <img src="{%static 'images/0001.jpg'%}" class="img-rounded img-responsive">
+                        <h5>Body Cooling and Heating</h5>
+                        <a href="http://www.viodyne.com/Homepage/Home?category=0000#" class="LearnMore" data-id="0001">VIEW MORE ▼</a>
+                    </div>
+                    <div class="noiTem" style="display: none;"></div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 padded">
+                    <div class="categories_container">
+                        <img src="{%static 'images/0002.jpg'%}" class="img-rounded img-responsive">
+                        <h5>Medical Equipment</h5>
+                        <a href="http://www.viodyne.com/Homepage/Home?category=0000#" class="LearnMore" data-id="0002">VIEW MORE ▼</a>
+                    </div>
+                    <div class="noiTem" style="display: none;"></div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 padded">
+                    <div class="categories_container">
+                        <img src="{%static 'images/0003.jpg'%}" class="img-rounded img-responsive">
+                        <h5>Sterile Processing Supplies</h5>
+                        <a href="http://www.viodyne.com/Homepage/Home?category=0000#" class="LearnMore" data-id="0003">VIEW MORE ▼</a>
+                    </div>
+                    <div class="noiTem" style="display: none;"></div>
+                </div>
+
+
+                <div class="col-md-3 col-sm-6 col-xs-6 padded">
+                    <div class="categories_container">
+                        <img src="{%static 'images/0004.jpg'%}" class="img-rounded img-responsive">
+                        <h5>Surgical Instruments</h5>
+                        <a href="http://www.viodyne.com/Homepage/Home?category=0000#" class="LearnMore" data-id="0004">VIEW MORE ▼</a>
+                    </div>
+                    <div class="noiTem" style="display: none;"></div>
+                </div>
+                <div class="clearfix">
+                </div>
+
+                
+
+                <div id="homeProds" style="">
+
+                	
+
+                	
+                </div>
+               
+
+
+
+
+                <script type="text/javascript">
+                    $('.LearnMore').click(function (e) {
+
+                        if ($(this).data('id') == '0002')
+                        {
+                            e.preventDefault();
+                            $('.noiTem').empty();
+                            $('.noiTem').hide();
+                            $('#homeProds').slideUp(300);
+                            $(this).parent().next().html("<p>Delivering advanced medical equipment designed to aid in the diagnosis and treatment of a variety of medical conditions.</p>");
+                            $(this).parent().next().show();
+                        }
+
+                        else if ($(this).data('id') == '0004') 
+                        {
+                            e.preventDefault();
+                            $('.noiTem').empty();
+                            $('.noiTem').hide();
+                            $('#homeProds').slideUp(300);
+                            $(this).parent().next().html("<p>Providing surgical instruments designed to perform specific functions during surgical procedures.</p>");
+                            $(this).parent().next().show();
+                        }
+
+
+                        else
+                        {
+                            $('.noiTem').hide();
+                            e.preventDefault();
+                            $('.noiTem').empty();
+                            $.ajax({
+                                url: "http://localhost:8000/getproducts",
+                              //  data: { Cat: $(this).data('id') },
+                                async: false,
+                                success: function (result) {
+                                	console.log(result);
+                                    $("#homeProds").html(result);
+                                },
+                            });
+
+                            $('#homeProds').slideDown(300);
+
+                        }
+                      
+
+                    });
+                </script>
+
+
+
+            </div>
+
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+    </div>
+    <!-- /#page-wrapper -->
+
+   {%include "footer.html"%}
+
+
+
+
+</body></html>
